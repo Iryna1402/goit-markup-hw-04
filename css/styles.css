@@ -361,6 +361,7 @@ body {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  text-align: left;
 }
 
 .wraper {
@@ -378,13 +379,13 @@ body {
   margin-bottom: 8px;
 }
 
-.page-portfolio-overlay {
+.overlay-box-img {
   position: relative;
   overflow: hidden;
 }
 
 .portfolio-list-item {
-  width: calc((100% - 48px) / 3);
+  width: calc((200% - 96px) / 6);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -393,7 +394,6 @@ body {
 
 .portfolio-overlay-text {
   position: absolute;
-  overflow: auto;
   top: 0;
   height: 100%;
   width: 100%;
@@ -407,15 +407,8 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-portfolio-item:hover,
-.page-portfolio-item:focus {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.page-portfolio-item:hover .portfolio-overlay-text,
-.page-portfolio-item:focus .portfolio-overlay-text {
+.portfolio-overlay-text:hover,
+.portfolio-overlay-text:focus {
   position: absolute;
   width: 100%;
   height: 100%;

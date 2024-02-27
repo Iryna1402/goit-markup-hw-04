@@ -446,6 +446,7 @@ body {
   color: #4d5ae5;
   margin-bottom: 16px;
   display: inline-block;
+  max-width: 115px;
 }
 
 .logo-part-footer {

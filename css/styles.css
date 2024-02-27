@@ -378,7 +378,7 @@ body {
   margin-bottom: 8px;
 }
 
-.overlay-box-img {
+.page-portfolio-overlay {
   position: relative;
   overflow: hidden;
 }
@@ -393,6 +393,7 @@ body {
 
 .portfolio-overlay-text {
   position: absolute;
+  overflow: auto;
   top: 0;
   height: 100%;
   width: 100%;
@@ -406,7 +407,15 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-overlay-text:hover {
+.page-portfolio-item:hover,
+.page-portfolio-item:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.page-portfolio-item:hover .portfolio-overlay-text,
+.page-portfolio-item:focus .portfolio-overlay-text {
   position: absolute;
   width: 100%;
   height: 100%;
